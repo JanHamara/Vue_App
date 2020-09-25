@@ -1,9 +1,11 @@
+import _ from 'lodash';
+
 var eventBus = new Vue();
 
 const app = new Vue({
     el: "#app",
     data: {
-        products: [],
+        message: "Hello World"
     },
     // created () {
     //     fetch("https://api.jsonbin.io/b/5f624b007243cd7e823d7bec/13", {
@@ -17,6 +19,11 @@ const app = new Vue({
     //         }
     //     )
     // }
+    computed: {
+        mydata() {
+            return _.join(['Hello', 'webpack'], ' ')
+        }
+    }
 })
 
 // ------------------------------------------

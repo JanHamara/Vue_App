@@ -6,20 +6,22 @@
 
         <title>Web App | Vue.js</title>
 
-        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="../main.css">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
    
         <!-- Font Awesome -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     </head>
     
     <body>
         <div id="app">
-            <h1>Hello</h1>
-        </div>
+            <h1>{{ message }}</h1>
 
+            <p>{{ mydata }}</p>
+        </div>
 
         <!-- Vue.js -->
         <script src="https://unpkg.com/vue"></script>
@@ -34,6 +36,7 @@
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <script src="./index.js"></script>
+        <script src="../dist/main.js"></script>
+
     </body>
 </html>
