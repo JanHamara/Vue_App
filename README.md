@@ -1,2 +1,2 @@
-# Vue_AdidasShop_ProductComponent
-Remake of Adidas e-commerce store product component with Vue.js
+# Vue_App
+Web App built using Vue.js
