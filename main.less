@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+// ------------------------
+
+@min: 100%;
+@max: 100%;
+
+@main-color: black;
+@main-bg: white;
+@font: Verdana, sans-serif;
+
+// ------------------------
+
+.fs {
+    width: @max;
+    height: @max;
+}
+
+.nobound {
+    margin: 0;
+    padding: 0;
+}
+
+.display (@value: block) {
+    display: @value;
+}
+  
+.position (@pos: absolute) {
+    position: @pos;
+}
+
+.abs {
+    .position;
+}
+
+.rel {
+    .position(relative);
+}
+  
+.aligntext (@align: center) {
+    text-align: @align;
+}
+  
+/*    Mixin for perfect absolute positioning - centering    */
+.p-center {
+  .position;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// ------------------------
+
+* {
+    // outline: 0.5px red solid;
+}
+
+html, body {
+    .fs;
+    font-family: @font;
+    font-size: @max;
+    font-weight: 700;
+}
+
+body {
+    .nobound;
+    width: 100vw;
+    height: 100vh;
+}
+
+// ------------------------
+
+body {
+    .position(relative);
+
+    #app {
+
+    }
+}
